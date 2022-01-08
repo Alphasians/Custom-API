@@ -1,0 +1,30 @@
+[
+	{
+		"id": "9561e151-84d8-4188-93cd-7306cefa8eec",
+		"caption": "A good old book.",
+		"point": 80,
+		"postImg": "https://i.imgur.com/l8rN74g.png",
+		"username": "Andreas Brixen"
+	},
+	{
+		"id": "79e81a61-51a7-4423-aa09-2d012b1ac647",
+		"caption": "Windows 11 FTW!!",
+		"point": 50,
+		"postImg": "https://images.unsplash.com/photo-1624571404553-49e7dbfbc90e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+		"username": "Dwayne Reese"
+	},
+	{
+		"id": "ede0d192-38fc-4ea0-b57e-6fa27212223d",
+		"caption": "Attending in-person hackathon after decades!!",
+		"point": 45,
+		"postImg": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+		"username": "Kelsey Hancock"
+	},
+	{
+		"id": "f41c02b0-01d0-45b7-ae02-befab033b1c5",
+		"caption": "Saturday nights are always wild",
+		"point": 22,
+		"postImg": "https://images.unsplash.com/photo-1586105449897-20b5efeb3233?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+		"username": "Wilona Mills"
+	}
+]

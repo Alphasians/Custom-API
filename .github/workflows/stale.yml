@@ -1,4 +1,4 @@
-name: Mark stale issues and pull requests
+name: Staleness
 
 on:
   schedule:
@@ -15,6 +15,5 @@ jobs:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         stale-issue-message: 'Stale issue message'
         stale-pr-message: 'Stale pull request message'
-        stale-issue-label: 'no-issue-activity'
-        stale-pr-label: 'no-pr-activity'
-        exempt-issue-labels: 'live stream review'
+        stale-issue-label: 'no issue activity'
+        stale-pr-label: 'no issue activity'
