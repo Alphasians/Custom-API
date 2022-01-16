@@ -14,6 +14,6 @@ if (process.env.DEV_ENVIRONMENT === 'development') {
 
 app.use('/', require(path.join(__dirname, './routes/operationsRoute.js')));
 
-app.get('/', (req, res) => res.send('Hello World!'));
+app.get('/', (req, res) => res.send('Welcome to my First API TESTING'));
 
 module.exports = app;
