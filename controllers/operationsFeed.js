@@ -6,7 +6,7 @@ exports.getFeed = async (req, res) => {
 		applicationToken: process.env.ASTRA_DB_APPLICATION_TOKEN,
 	});
 
-	const postsCollection = astraClient.namespace("feed").collection("Collection");
+	const postsCollection = astraClient.namespace("feed").collection("Social");
 
 	const posts = await postsCollection.find({});
 	return res.json(posts);
@@ -20,7 +20,7 @@ exports.createFeed = async (req, res) => {
 		applicationToken: process.env.ASTRA_DB_APPLICATION_TOKEN,
 	});
 
-	const postsCollection = astraClient.namespace("feed").collection("Collection");
+	const postsCollection = astraClient.namespace("feed").collection("Social");
 
 	const createPost = await postsCollection.create({
 		"username": req.body.username,
@@ -29,7 +29,7 @@ exports.createFeed = async (req, res) => {
 		"points": req.body.points,
 	});
 
-	return res.json({data: createPost, msg: 'Post made successfully'})
+	return res.json({data: createPost, msg: 'Feed is done'})
 };
 
 
@@ -41,7 +41,7 @@ exports.updateFeed = async (req, res) => {
 			applicationToken: process.env.ASTRA_DB_APPLICATION_TOKEN,
 		});
 	
-		const postsCollection = astraClient.namespace("feed").collection("Collection");
+		const postsCollection = astraClient.namespace("feed").collection("Social");
 	
 		const createPost = await postsCollection.update(req.body.Id,{
 			"username": req.body.username,
@@ -60,7 +60,7 @@ exports.deleteFeed = async (req, res) => {
 		astraDatabaseRegion: process.env.ASTRA_DB_REGION,
 		applicationToken: process.env.ASTRA_DB_APPLICATION_TOKEN,
 	});
-	const postsCollection = astraClient.namespace("feed").collection("Collection");
+	const postsCollection = astraClient.namespace("feed").collection("Social");
 	const deletePost = await postsCollection.delete(req.body.documentId);
 
 	return res.json({data: deletePost, msg: 'user updated successfully'})
